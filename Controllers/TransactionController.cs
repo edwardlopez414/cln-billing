@@ -7,7 +7,8 @@ namespace clnbilling.Controllers
     public class TransactionController : ControllerBase
     {
         [HttpPost]
-        public IActionResult Index()
+        [Route("register")]
+        public IActionResult Register()
         {
             return Ok();
         }
@@ -18,7 +19,12 @@ namespace clnbilling.Controllers
         {
            return Ok();
         }
-
+        [HttpPost]
+        [Route("delete_invoice")]
+        public IActionResult Delete_invoice()
+        {
+            return Ok();
+        }
         [HttpPost]
         [Route("Report")]
         public IActionResult Report()
