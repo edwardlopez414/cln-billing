@@ -1,9 +1,9 @@
-﻿namespace clnbilling.Models
+﻿namespace clnbilling.DataDTO
 {
-    public class Product
+    public class UpdateProductsDTO
     {
-        public int id { get; set; }
         public string? sku { get; set; }
+        public string? new_sku { get; set; }
         public string? name { get; set; }
         public string? description { get; set; }
         public string? country_id { get; set; }

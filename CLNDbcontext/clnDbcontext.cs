@@ -91,11 +91,13 @@ namespace clnbilling.CLNDbcontext
                 entity.Property(e => e.country_id)
                 .HasColumnName("country_id");
                 entity.Property(e => e.currency)
-                .HasColumnName("currency");
+                .HasColumnName("currecy");
                 entity.Property(e => e.amount)
                 .HasColumnName("amount");
                 entity.Property(e => e.is_active)
                 .HasColumnName("is_active");
+                entity.Property(c => c.units)
+                .HasColumnName("units");
             });
 
             modelBuilder.Entity<Exchange_rate>(entity => 

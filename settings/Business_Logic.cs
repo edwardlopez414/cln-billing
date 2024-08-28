@@ -404,5 +404,54 @@ namespace clnbilling.settings
 
             return exchange;
         }
+
+        internal Product config_product(Product? product, UpdateProductsDTO model)
+        {
+
+            product.sku = model.new_sku;
+            product.name = model.name;
+            product.description = model.description;
+            product.country_id = model.country_id;
+            product.currency = model.currency;
+            product.amount = model.amount;
+            product.is_active = model.is_active;
+            product.units = model.units;
+            return product;
+        }
+
+        internal Product config_product(InsertProductDTO model)
+        {
+            Product product = new Product
+            {
+                sku = model.sku,
+                name = model.name,
+                description = model.description,
+                country_id = model.country_id,
+                currency = model.currency,
+                amount = model.amount,
+                is_active = model.is_active,
+                units = model.units
+            };
+            return product;
+        }
+
+        internal Product_view config_product(Product? product, decimal exchange)
+        {
+
+            Product_view view = new Product_view
+            {
+                sku = product.sku,
+                name = product.name,
+                description = product.description,
+                country_id = product.country_id,
+                currency = product.currency,
+                amount = product.amount,
+                is_active = product.is_active,
+                units = product.units,
+                currency2 = "USD",
+                amount_2 = (product.currency == "NIO") ? (product.amount / exchange) : (product.amount * exchange)
+            };
+            return view;
+        }
     }
 }

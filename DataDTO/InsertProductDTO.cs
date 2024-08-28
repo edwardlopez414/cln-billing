@@ -1,8 +1,7 @@
-﻿namespace clnbilling.Models
+﻿namespace clnbilling.DataDTO
 {
-    public class Product
+    public class InsertProductDTO
     {
-        public int id { get; set; }
         public string? sku { get; set; }
         public string? name { get; set; }
         public string? description { get; set; }
