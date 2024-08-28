@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("clnbilling")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+838a7119ed45b894d3933d9a8560635a2658dde5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77f05c2622536db1be9890b85a3b4cc127b370ec")]
 [assembly: System.Reflection.AssemblyProductAttribute("clnbilling")]
 [assembly: System.Reflection.AssemblyTitleAttribute("clnbilling")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

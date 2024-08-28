@@ -29,6 +29,8 @@ namespace clnbilling.Controllers
         [Route("register")]
         public IActionResult Register()
         {
+
+
             return Ok();
         }
     }

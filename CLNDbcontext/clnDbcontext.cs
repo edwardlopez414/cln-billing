@@ -73,8 +73,8 @@ namespace clnbilling.CLNDbcontext
                 .HasColumnName("is_active");
                 entity.Property(e => e.created_date)
                 .HasColumnName("created_date");
-                entity.Property(e => e.last_update_date)
-                .HasColumnName("last_update_date");
+                entity.Property(e => e.last_updated_date)
+                .HasColumnName("last_updated_date");
             });
 
             modelBuilder.Entity<Product>(entity => 
